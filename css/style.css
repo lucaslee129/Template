@@ -1,0 +1,112 @@
+
+html, body {
+  color: black;
+  font-family: Verdana;
+  margin: 0;
+  height: 100%;
+    }    
+    
+  
+#left {
+    width: 220px; 
+    float: left;
+    background-color: white;
+    height: 100%;
+    }
+
+.linkedin {
+  position: fixed;
+  bottom: 200px;
+  }
+
+.github {
+  position: fixed;
+  bottom: 0px;
+  }
+
+#center { 
+    width: calc( 100% - 440px);
+    background-color: #FFFFFF;
+    float: left;
+    height: 100%;
+    }
+    
+    
+.circular {
+  display: block;
+  margin-left: auto; 
+  margin-right: auto;
+  width: 230px;
+  height: 230px;
+  border: 2px;
+  border-radius: 10px;
+  background: url(../images/picture.jpg) no-repeat;
+        }
+              
+  
+#right {
+    width: 0px;
+    background-color: grey; 
+    height: 100%;
+    position: fixed;
+    right: 0px;
+    }
+    
+
+h1 { 
+  font-family: Gill Sans; 
+  font-weight: normal;
+  font-size: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center ;
+}
+
+h4  {
+  
+  width: 30em; 
+  border-left: solid 1px green;
+  padding: 10px;
+  font-family: Lucida Grande;
+  font-weight: normal;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 115%
+ 
+  }
+  
+#nav { 
+  width:500px;
+  margin: 0 auto;
+  list-style: none;
+  padding:10px;
+  font: bold 90% arial, helvetica, sans-serif;
+  font-size: 35px;
+  text-align: center;
+  border: 2px medium;
+  border-radius: 2px;
+  background-color: gold;
+  color: #FFF;
+
+  }
+  
+#nav li {
+  display: inline;
+  padding: 8px;
+  }
+  
+#nav a:hover {
+    color: grey;
+
+    }
+
+#nav a{
+  display: inline;
+  width: 150px;
+  text-decoration: none;
+  color: black;
+  background-color: gold;
+  }
+
+
+    

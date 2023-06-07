@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+      <link href="css/style.css" rel="stylesheet" >
+  </head>
+ 
+  <body>
+
+  <div id = "left">
+    <a href = "https://github.com/JoshuaAtWes" class = "github"><img border = "0" img src = "images/github.png"></a>
+  </div>
+
+  <div id = "center">
+    <h1>George Evans</h1>
+    <div class = "circular"> </div> 
+    <p>  </p>
+
+    <ul id= "nav">
+      <li><a href = "#" onclick= "showAbout()">about me</a></li>
+      <li><a href = "#" onclick= "showProject()">project</a></li>
+      <li><a href = "#" onclick="showResume()">resume</a></li>
+    </ul>
+
+    <h4 id= "about">Welcome! I am a third-year student double majoring in computer science and economics. 
+        I am interested in software development, web development and data analytics, and I want to work with you.  </h4>
+    
+    <iframe id = "PDFviewer" style = "display:none" width = 612 height = 792 ></iframe>
+    <img id = "calendar"> 
+
+  
+    <script type = "text/javascript">
+
+    function showAbout(){
+      var element = document.getElementById("about");
+      element.innerHTML = "Welcome! I am a third-year student double majoring in computer science and economics." + 
+        " I am interested in software development, web development and data analytics, and I want to work with you." ;
+
+      var myFrame = document.getElementById("PDFviewer");
+      myFrame.style.display = "none";
+      var img = document.getElementById("calendar");
+      img.style.display = "none";
+
+          }
+    
+    function showProject() { 
+      var element = document.getElementById("about");
+      element.innerHTML = "My most recent project was building a scheduling calendar with Ruby on Rails for a school:";
+
+      var img = document.getElementById("calendar");
+      img.src = "images/calendar.jpeg";
+      img.style.display = "block";
+      img.style.margin = "auto";
+
+      var myFrame = document.getElementById("PDFviewer");
+      myFrame.style.display = "none"; 
+
+            }
+
+    function showResume(){
+      var myFrame = document.getElementById("PDFviewer");
+      myFrame.style.display= "block";
+      myFrame.src = "files/resume.pdf";
+      myFrame.style.margin = "auto";
+
+      var element = document.getElementById("about");
+      element.innerHTML = "";
+      var img = document.getElementById("calendar");
+      img.style.display = "none";
+
+         }
+  </script>
+
+  </div>
+  <div id = "right"></div>
+
+  </body>
+</html>                                                            
